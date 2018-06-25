@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: kxnG/vi6CT6XKGQxdNw4ewFoSYzraCBuURYOHzFp2dJtVFg+9iCeMgHqPCLCU7krmSqZPTQNjyaibDwkWVxQdTVBwS7K4bxEvsRd3S6djhdNnjIx89sVFS78WH4jCVDB9pGpDE643FLKDiSoFs2IjwH+Py31Nl1RJBdbpnhmUll0N23zsEkw1xN5IBF4gb64BbJWG1fp2h2KYKsOkISsc8AWXpg9sCxZgeVgcmechSpe0U/jM+dYpLUaVd8B8zTo413WlzZyA2lnFueJUgdMZgq+ZnOKz6K9Mfu1sepz5H7ffMqj3bN8hQMGc43IcWsj1LxDQEMwZrRsTtbDErSbo5pTwnzDNfZNwP9k5a9MrjnZeiU/Mw3RS4EygxsbZWz8szMpxDoqbPwLFZDvmswsWwelnudNImpwEB5Ay+lXaHjOPLebC6c8RRaRKKcpBtMKy2ygjXqjtFzlJqIbXx6RWdVmjd5G0ajD0uQ50/kMShwscRKNIMtbLuInBQi8zrBnUilOiMuNeEHW2htKsq9vQl7CLSPu/IGgmwowxbsl1/ppkKGCTNSYTfSsx4QGX8R650E91GA555VIra8V1LqKUgEu2r8flEOfe8asskU/azTlL3Lb1x+/OPj3ZFixB5B4OtQib6aCZNBNuPMe3F56pcvgGRFfM78bh1xrpjGpoB0=
+  app: polar-eyrie-91356
+  on:
+    repo: pocketcalculator/react-trello-testing
